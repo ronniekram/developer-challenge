@@ -4,9 +4,9 @@ import { graphql } from "gatsby";
 import "normalize.css";
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
-import Navigation from "../components/navigation";
-// {/* chang card to a blank data card */}
-import Card from "../components/CupCakesCard";
+import Navigation from "../components/navigation"
+{/* change card to a blank data card */}
+import Card from "../components/PetFoodCard.jsx";
 
 import SEO from "../components/SEO";
 import { ReactComponent as Logo } from "../assets/Logo.svg";

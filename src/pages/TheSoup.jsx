@@ -6,7 +6,7 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 import Navigation from "../components/navigation"
 {/* chang card to a blank data card */}
-import Card from "../components/CupCakesCard";
+import Card from "../components/SoupsCard.jsx";
 
 import SEO from "../components/SEO";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
