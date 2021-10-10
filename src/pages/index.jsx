@@ -32,24 +32,15 @@ const Container = styled.div`
 
 // ========= MAIN =========
 const Index = ({ data }) => {
-	// get the product data from prisma
-	const item = data.prismicProduct.data;
-
+  console.log(data)
 	return (
 		<>
 			{/* set the page metadata */}
 			<SEO title="Welcome to the Challenge" />
 
 			<Container>
-				<div
-					css={css`
-						margin-bottom: 1rem;
-					`}
-				>
-					I want {item.quantity.text} of{` `}
-					{item.title.text}, please.
-				</div>
 				<Logo />
+				<div></div>
 			</Container>
 		</>
 	);
@@ -59,16 +50,30 @@ export default Index;
 
 // ========= QUERY =========
 // use gatsby's graphql query to get required data
-export const query = graphql`
+export const productQuery = graphql`
 	query {
-		prismicProduct(data: { type: { eq: "SOUP" } }) {
-			id
-			data {
-				title {
-					text
-				}
-				quantity {
-					text
+		allPrismicProduct {
+			edges {
+				node {
+					id
+					data {
+						description {
+							html
+							text
+						}
+						image {
+							alt
+							url
+						}
+						quantity {
+							html
+							text
+						}
+						title {
+							html
+							text
+						}
+					}
 				}
 			}
 		}
