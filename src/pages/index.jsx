@@ -23,16 +23,15 @@ const Container = styled.div`
 	align-items: center;
 	flex-direction: column;
 
-	background-color: #c0ffee;
-	color: #43d1e7;
-
-	font-family: "Lobster";
-	font-size: 2rem;
+	background-color: #7855da;
+	color: #e5e5e5;
 `;
 
 // ========= MAIN =========
 const Index = ({ data }) => {
-  console.log(data)
+  // Logo needs small resize: Current dimensions: 150x60, should be: 143x45
+  const productArray = data.allPrismicProduct.edges;
+  console.log(productArray);
 	return (
 		<>
 			{/* set the page metadata */}
