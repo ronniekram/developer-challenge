@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 
 import "normalize.css";
@@ -27,8 +27,12 @@ const Container = styled.div`
 	color: #e5e5e5;
 
 	.logo {
-		width: 8.8rem;
-		height: auto;
+    width: fit-content;
+
+    svg {
+      width: 8.8rem;
+      height: auto;
+    }
 	}
 `;
 
