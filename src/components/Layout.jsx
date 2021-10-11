@@ -6,8 +6,6 @@ import Navigation from "./Navigation";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
 
 const Container = styled.div`
-	min-height: 100vh;
-	height: 100vh;
 	left: 0;
 	right: 0;
 	top: 0;
