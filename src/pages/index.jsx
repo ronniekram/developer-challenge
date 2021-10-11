@@ -13,6 +13,8 @@ import { ReactComponent as Logo } from "../assets/Logo.svg";
 
 // a container to fill the window, wrap all contents, and center them
 const Container = styled.div`
+	min-height: 100vh;
+	height: 100vh;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -41,7 +43,7 @@ const Container = styled.div`
 const Index = ({ data }) => {
 	// Logo needs small resize: Current dimensions: 150x60, should be: 143x45
 	const productArray = data.allPrismicProduct.edges;
-  const cupcake = productArray[2].node.data;
+	const cupcake = productArray[2].node.data;
 	return (
 		<>
 			{/* set the page metadata */}
@@ -53,8 +55,13 @@ const Index = ({ data }) => {
 				</div>
 
 				<div>
-          <Card />
-        </div>
+					<Card
+						description={cupcake.description}
+						image={cupcake.image}
+						quantity={cupcake.quantity}
+						title={cupcake.title}
+					/>
+				</div>
 			</Container>
 		</>
 	);

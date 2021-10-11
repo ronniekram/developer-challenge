@@ -4,7 +4,8 @@ import styled from "@emotion/styled";
 
 const Container = styled.div`
   margin: auto;
-  
+  margin-top: 4.1875rem;
+  padding: 0 2rem;
 	button {
 		background-color: #da55bd;
 		color: #ffffff;
@@ -16,19 +17,19 @@ const Container = styled.div`
 
 		padding: 1rem 2.375rem;
 		border-radius: 1.25rem;
-    border: none;
+		border: none;
 	}
 `;
 
 // passing in the quantity for button text
 const Button = ({ quantity, handleClick }) => {
-  return (
-    <Container>
-      <button type="button" onClick={handleClick}>
+	return (
+		<Container>
+			<button type="button" onClick={handleClick}>
 				Order {quantity.text}
 			</button>
-    </Container>
-  );
-}
+		</Container>
+	);
+};
 
 export default Button;
