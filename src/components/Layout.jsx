@@ -20,7 +20,8 @@ const Container = styled.div`
 
 	background-color: #7855da;
 	color: #e5e5e5;
-
+	max-width: 414px;
+	max-height: 896px;
 	.logo {
 		display: flex;
 		width: fit-content;

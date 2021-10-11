@@ -9,6 +9,8 @@ import Button from "./Button";
 const CardContainer = styled.div`
 	background-color: #ffffff;
 	margin: auto;
+	max-width: 20.625rem;
+	max-height: 37.5rem;
 	width: 20.625rem;
 	height: 37.5rem;
 	border-radius: 3.125rem;
