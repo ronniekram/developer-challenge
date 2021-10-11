@@ -7,6 +7,7 @@ import styled from "@emotion/styled";
 
 import SEO from "../components/SEO";
 import Card from "../components/Card";
+import Navigation from "../components/Navigation";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
 
 // ========= COMPONENTS =========
@@ -61,6 +62,10 @@ const Index = ({ data }) => {
 						quantity={cupcake.quantity}
 						title={cupcake.title}
 					/>
+				</div>
+
+				<div>
+					<Navigation />
 				</div>
 			</Container>
 		</>
