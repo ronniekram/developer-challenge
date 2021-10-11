@@ -3,9 +3,9 @@ import "normalize.css";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-  margin: auto;
-  margin-top: 4.1875rem;
-  padding: 0 2rem;
+	margin: auto;
+	margin-top: 4.1875rem;
+	padding: 0 2rem;
 	button {
 		background-color: #da55bd;
 		color: #ffffff;

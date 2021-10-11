@@ -12,17 +12,16 @@ const CardContainer = styled.div`
 	width: 20.625rem;
 	height: 37.5rem;
 	border-radius: 3.125rem;
-  
-  display: flex;
-  flex-flow: column nowrap;
-  justify-items: space-between;
-  align-content: center;
 
-  box-shadow: 0px 12px 25px 0px #00000040;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-items: space-between;
+	align-content: center;
 
+	box-shadow: 0px 12px 25px 0px #00000040;
 
 	.product-info {
-    margin: 1.875rem 0 1.875rem 0;
+		margin: 1.875rem 0 1.875rem 0;
 	}
 `;
 

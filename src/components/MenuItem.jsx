@@ -22,14 +22,14 @@ const ItemContainer = styled.div`
 `;
 
 const MenuItem = ({ description, title }) => {
-  // MenuItem component returns div with info about the product.
+	// MenuItem component returns div with info about the product.
 
-  return (
-    <ItemContainer>
-      <h1>{title.text}</h1>
-      <p>{description.text}</p>
-    </ItemContainer>
-  );
-}
+	return (
+		<ItemContainer>
+			<h1>{title.text}</h1>
+			<p>{description.text}</p>
+		</ItemContainer>
+	);
+};
 
 export default MenuItem;
