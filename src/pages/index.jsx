@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import "normalize.css";
-import styled from "@emotion/styled";
 
 import Layout from "../components/Layout";
 import Card from "../components/Card";

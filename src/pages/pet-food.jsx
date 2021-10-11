@@ -21,6 +21,9 @@ const Index = ({ data }) => {
 
 export default Index;
 
+// ========= QUERY =========
+// use gatsby's graphql query to get required data
+
 export const query = graphql`
 	query {
 		prismicProduct(data: { type: { eq: "PET FOOD" } }) {

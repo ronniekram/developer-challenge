@@ -10,7 +10,8 @@ const ImageContainer = styled.div`
 		max-height: 14.375rem;
 		width: 100%;
 		border-radius: 3.125rem 3.125rem 0 0;
-		object-fit: cover;
+    clip: rect(230px, 0, 0px, 0);
+    object-fit: cover;
 	}
 `;
 
