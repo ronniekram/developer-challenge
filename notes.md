@@ -5,7 +5,7 @@
 # Pages
 
 # Data
-  * Grab data through GraphQL in index.js in order to pass to Card Components
+  * Grab data through GraphQL in index.js in order to pass to Card Components ()
 
 
 # Setup

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 
 import "normalize.css";
 import styled from "@emotion/styled";
-import { css } from "@emotion/core";
+// import { css } from "@emotion/core";
 
 import SEO from "../components/SEO";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
@@ -25,20 +25,27 @@ const Container = styled.div`
 
 	background-color: #7855da;
 	color: #e5e5e5;
+
+	.logo {
+		width: 8.8rem;
+		height: auto;
+	}
 `;
 
 // ========= MAIN =========
 const Index = ({ data }) => {
-  // Logo needs small resize: Current dimensions: 150x60, should be: 143x45
-  const productArray = data.allPrismicProduct.edges;
-  console.log(productArray);
+	// Logo needs small resize: Current dimensions: 150x60, should be: 143x45
+	const productArray = data.allPrismicProduct.edges;
 	return (
 		<>
 			{/* set the page metadata */}
 			<SEO title="Welcome to the Challenge" />
 
 			<Container>
-				<Logo />
+				<div className="logo">
+					<Logo />
+				</div>
+
 				<div></div>
 			</Container>
 		</>
