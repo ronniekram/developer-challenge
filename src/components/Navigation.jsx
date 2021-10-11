@@ -3,21 +3,33 @@ import { Link } from "gatsby";
 
 import "normalize.css";
 import styled from "@emotion/styled";
+import { css } from "@emotion/core";
 
 // FontAwesome only has solid fill cart as a free icon.
 // Switched user icon to more solid fill for continuity.
-import { ReactComponent as Cart } from "../assets/Cart.svg";
-import { ReactComponent as User } from "../assets/User.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faShoppingCart,
+	faUserCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
 const NavContainer = styled.nav`
+  margin: 4rem 1.875rem 0 1.875rem;
+	width: 20.625rem;
 	display: flex;
 	flex-flow: row nowrap;
 
 	justify-content: space-between;
 	align-content: center;
+  align-items: center;
 
 	font-family: "Jura";
 	font-size: 0.6875rem;
+
+	button {
+		background: transparent;
+		border: none;
+	}
 
 	a {
 		color: #ffffff;
@@ -34,7 +46,14 @@ const Navigation = () => {
 				onClick={() => console.log(`This is your profile!`)}
 				name="User"
 			>
-				<img src={User} alt="User Profile Icon" />
+				<FontAwesomeIcon
+					icon={faUserCircle}
+					css={css`
+						color: #ffffff;
+						background: #7855da;
+            font-size: 1rem;
+					`}
+				/>
 			</button>
 
 			<Link to="/soups">Soups</Link>
@@ -46,7 +65,14 @@ const Navigation = () => {
 				onClick={() => console.log(`This is your cart!`)}
 				name="Cart"
 			>
-				<img src={Cart} alt="Cart Icon" />
+				<FontAwesomeIcon
+					icon={faShoppingCart}
+					css={css`
+						color: #ffffff;
+						background: #7855da;
+            font-size: 1rem;
+					`}
+				/>
 			</button>
 		</NavContainer>
 	);
