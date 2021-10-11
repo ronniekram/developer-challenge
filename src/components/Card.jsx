@@ -23,7 +23,10 @@ const CardContainer = styled.div`
 	box-shadow: 0px 12px 25px 0px #00000040;
 
 	.product-info {
+    display: flex;
+    flex-flow: column nowrap;
 		margin: 1.875rem 0 1.875rem 0;
+    align-items: center;
 	}
 `;
 
