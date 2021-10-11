@@ -6,6 +6,7 @@ import styled from "@emotion/styled";
 // import { css } from "@emotion/core";
 
 import SEO from "../components/SEO";
+import Card from "../components/Card";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
 
 // ========= COMPONENTS =========
@@ -27,12 +28,12 @@ const Container = styled.div`
 	color: #e5e5e5;
 
 	.logo {
-    width: fit-content;
+		width: fit-content;
 
-    svg {
-      width: 8.8rem;
-      height: auto;
-    }
+		svg {
+			width: 8.8rem;
+			height: auto;
+		}
 	}
 `;
 
@@ -40,6 +41,7 @@ const Container = styled.div`
 const Index = ({ data }) => {
 	// Logo needs small resize: Current dimensions: 150x60, should be: 143x45
 	const productArray = data.allPrismicProduct.edges;
+  const cupcake = productArray[2].node.data;
 	return (
 		<>
 			{/* set the page metadata */}
@@ -50,7 +52,9 @@ const Index = ({ data }) => {
 					<Logo />
 				</div>
 
-				<div></div>
+				<div>
+          <Card />
+        </div>
 			</Container>
 		</>
 	);
