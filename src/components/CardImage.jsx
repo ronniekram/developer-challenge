@@ -14,8 +14,16 @@ const ImageContainer = styled.div`
 	}
 `;
 
-const CardImage = () => {
-	return <div />;
+const CardImage = ({ image, title }) => {
+  // Component returns image of product.
+  // Passing in title object to add alt text to image if alt attribute is null.
+  const altText = image.alt ? image.alt : `A delicious ${title.text}. Mouthwatering.`;
+
+	return (
+    <ImageContainer>
+      <img src={image.url} alt={altText} />
+    </ImageContainer>
+  )
 };
 
 export default CardImage;
