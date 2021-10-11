@@ -12,7 +12,6 @@ import Card from "../components/Card";
 // ========= MAIN =========
 const Index = ({ data }) => {
 	const cupcake = data.prismicProduct.data;
-  debugger
 	return (
 		<>
 			<Layout>
