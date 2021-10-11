@@ -31,7 +31,11 @@ const Container = styled.div`
 	color: #e5e5e5;
 
 	.logo {
+		display: flex;
 		width: fit-content;
+		align-self: flex-start;
+		margin-left: 4.1rem;
+		margin-bottom: 0.5rem;
 
 		svg {
 			width: 8.8rem;

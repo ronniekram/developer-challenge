@@ -14,14 +14,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const NavContainer = styled.nav`
-  margin: 4rem 1.875rem 0 1.875rem;
+	margin: 4rem 2rem 0 2rem;
 	width: 20.625rem;
 	display: flex;
 	flex-flow: row nowrap;
 
 	justify-content: space-between;
 	align-content: center;
-  align-items: center;
+	align-items: center;
 
 	font-family: "Jura";
 	font-size: 0.6875rem;
@@ -51,7 +51,7 @@ const Navigation = () => {
 					css={css`
 						color: #ffffff;
 						background: #7855da;
-            font-size: 1rem;
+						font-size: 1rem;
 					`}
 				/>
 			</button>
@@ -70,7 +70,7 @@ const Navigation = () => {
 					css={css`
 						color: #ffffff;
 						background: #7855da;
-            font-size: 1rem;
+						font-size: 1rem;
 					`}
 				/>
 			</button>
