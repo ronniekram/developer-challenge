@@ -36,6 +36,12 @@ const NavContainer = styled.nav`
 		text-transform: uppercase;
 		text-decoration: none;
 	}
+
+	.active {
+		background: #da55bd;
+    border-radius: 200px;
+    padding: 1px 0.625rem;
+	}
 `;
 
 const Navigation = () => {
@@ -56,9 +62,15 @@ const Navigation = () => {
 				/>
 			</button>
 
-			<Link to="/soups">Soups</Link>
-			<Link to="/">Desserts</Link>
-			<Link to="/pet-food">Pet Food</Link>
+			<Link to="/soups" activeClassName="active">
+				Soups
+			</Link>
+			<Link to="/" activeClassName="active">
+				Desserts
+			</Link>
+			<Link to="/pet-food" activeClassName="active">
+				Pet Food
+			</Link>
 
 			<button
 				type="button"
