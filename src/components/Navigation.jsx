@@ -39,8 +39,8 @@ const NavContainer = styled.nav`
 
 	.active {
 		background: #da55bd;
-    border-radius: 200px;
-    padding: 1px 0.625rem;
+		border-radius: 200px;
+		padding: 1px 0.625rem;
 	}
 `;
 

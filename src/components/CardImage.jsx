@@ -11,6 +11,7 @@ const ImageContainer = styled.div`
 		width: 100%;
 		border-radius: 3.125rem 3.125rem 0 0;
 		clip: rect(230px, 0, 0px, 0);
+    object-position: bottom;
 		object-fit: cover;
 	}
 `;
